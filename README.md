@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # OS_Lab_Assignment
 =======
 # OS Lab Assignments (ENCS351)
