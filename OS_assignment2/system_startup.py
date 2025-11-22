@@ -1,6 +1,10 @@
 """
 SYSTEM STARTUP SIMULATION (Assignment 2)
+<<<<<<< HEAD
 Author : Luvin
+=======
+Author : Spandan
+>>>>>>> 2c6a365c41d3e4266bdb8d5a7865b2019790bbb1
 Course : Operating Systems Lab
 File   : system_startup.py
 
