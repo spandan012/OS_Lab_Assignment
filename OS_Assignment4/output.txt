@@ -1,0 +1,103 @@
+
+=== OS LAB ASSIGNMENTS - COMBINED OUTPUT ===
+
+--- Assignment 3 ---
+
+[Priority Scheduling]
+PID BT PR WT TAT
+1   5  1  0  5
+2   3  2  5  8
+3   4  3  8  12
+Average WT = 4.33
+Average TAT = 8.33
+
+[Round Robin Scheduling] (Quantum = 2)
+Gantt Chart:
+P1 [0 → 2]
+P2 [2 → 4]
+P3 [4 → 6]
+P1 [6 → 8]
+P3 [8 → 10]
+P1 [10 → 11]
+
+Average WT = 4.00
+Average TAT = 8.00
+
+[Sequential File Allocation]
+Total Blocks = 20
+File 1 allocated from 2 to 5
+File 2 allocated from 6 to 9
+File 3 cannot be allocated
+Final Block Map:
+0 0 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0
+
+[Indexed File Allocation]
+Index Block = 4 → Data Blocks = [6, 7, 8]
+Index Block = 10 already allocated
+Final Block Map:
+0 0 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0
+
+[Contiguous Memory Allocation]
+Partitions: 100 400 200 300
+Processes: 212 417 112 426
+
+First Fit:
+P1 → Partition 2
+P2 → Partition 4
+P3 → Partition 3
+P4 → Not allocated
+
+Best Fit:
+P1 → Partition 3
+P2 → Partition 4
+P3 → Partition 1
+P4 → Not allocated
+
+Worst Fit:
+P1 → Partition 2
+P2 → Partition 4
+P3 → Partition 2
+P4 → Not allocated
+
+[MFT]
+Memory = 1000, Partition = 200
+P1=150 Allocated (50 internal fragmentation)
+P2=300 Too large
+P3=180 Allocated (20 internal fragmentation)
+
+[MVT]
+Memory = 1000
+P1=300 Allocated
+P2=500 Allocated
+P3=300 Not enough memory
+
+--- Assignment 4 ---
+
+[Batch Processing Simulation]
+Executing script1.py…
+script1.py exited with code 0
+Executing script2.py…
+script2.py exited with code 0
+
+[System Logging Simulation]
+System Booting…
+(Process logs written to system_log.txt)
+System Shutdown.
+
+[IPC Using fork() & pipe()]
+Child received: Hello from parent
+
+[IPC Using C Program]
+Child received: Hello from parent (C)
+
+[VM Detection Output]
+System: Linux 6.x
+/sys/class/dmi/id/product_name -> virtualbox
+Likely running inside a VM
+
+[Scheduling Algorithms]
+FCFS: WT=4.0, TAT=8.0
+SJF: WT=2.33, TAT=6.33
+RR (q=2): WT=4.66, TAT=8.66
+
+=== END OF OUTPUT ===
